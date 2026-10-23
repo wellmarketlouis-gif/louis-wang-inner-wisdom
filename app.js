@@ -28,6 +28,7 @@ const drafts = {
   ...approvedNotes,
   ...approvedBatch3,
   ...approvedBatch4,
+  ...approvedBatch5,
   compassion: { title: '先放下反擊，不是放下原則。', paragraphs: [
     '有些話，聽進心裡只要一秒；想把傷人的話收回來，卻可能需要很久。',
     '當我們覺得被誤解、被忽略，第一個念頭常是立刻證明自己。可是，說得更快，不一定更接近事情的真相。',
@@ -51,6 +52,7 @@ document.querySelectorAll('[data-note]').forEach(button => button.addEventListen
   document.querySelector('#dialog-title').textContent = draft.title;
   const content = document.querySelector('#dialog-content');
   content.replaceChildren(...draft.paragraphs.map(text => { const p = document.createElement('p'); p.textContent = text; return p; }));
+  if (draft.tags) { const p = document.createElement('p'); p.className = 'small-note'; p.textContent = draft.tags; content.append(p); }
   if (draft.revision) { const p = document.createElement('p'); p.className = 'small-note'; p.textContent = draft.revision; content.append(p); }
   if (draft.sourceNote) { const p = document.createElement('p'); p.className = 'small-note'; p.textContent = draft.sourceNote; content.append(p); }
   for (const source of draft.sources || []) {
