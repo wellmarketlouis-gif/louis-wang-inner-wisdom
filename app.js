@@ -1,3 +1,8 @@
+const lifeFilter = document.createElement('button');
+lifeFilter.dataset.filter = '人生智慧';
+lifeFilter.setAttribute('aria-pressed', 'false');
+lifeFilter.textContent = '人生智慧';
+document.querySelector('.filters').append(lifeFilter);
 const filterButtons = [...document.querySelectorAll('[data-filter]')];
 function filterNotes(category) {
   let count = 0;
