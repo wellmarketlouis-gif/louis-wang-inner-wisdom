@@ -34,6 +34,7 @@ const drafts = {
   ...approvedBatch8,
   ...approvedBatch9,
   ...approvedBatch10,
+  ...approvedBatch11,
   compassion: { title: '先放下反擊，不是放下原則。', paragraphs: [
     '有些話，聽進心裡只要一秒；想把傷人的話收回來，卻可能需要很久。',
     '當我們覺得被誤解、被忽略，第一個念頭常是立刻證明自己。可是，說得更快，不一定更接近事情的真相。',
