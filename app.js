@@ -3,6 +3,11 @@ lifeFilter.dataset.filter = '人生智慧';
 lifeFilter.setAttribute('aria-pressed', 'false');
 lifeFilter.textContent = '人生智慧';
 document.querySelector('.filters').append(lifeFilter);
+const travelFilter = document.createElement('button');
+travelFilter.dataset.filter = '信仰行腳';
+travelFilter.setAttribute('aria-pressed', 'false');
+travelFilter.textContent = '信仰行腳';
+document.querySelector('.filters').append(travelFilter);
 const filterButtons = [...document.querySelectorAll('[data-filter]')];
 function filterNotes(category) {
   let count = 0;
@@ -20,6 +25,7 @@ function filterNotes(category) {
 filterButtons.forEach(button => button.addEventListener('click', () => filterNotes(button.dataset.filter)));
 document.querySelectorAll('[data-filter-link]').forEach(link => link.addEventListener('click', () => filterNotes(link.dataset.filterLink)));
 const drafts = {
+  ...approvedNotes,
   compassion: { title: '先放下反擊，不是放下原則。', paragraphs: [
     '有些話，聽進心裡只要一秒；想把傷人的話收回來，卻可能需要很久。',
     '當我們覺得被誤解、被忽略，第一個念頭常是立刻證明自己。可是，說得更快，不一定更接近事情的真相。',
@@ -43,6 +49,7 @@ document.querySelectorAll('[data-note]').forEach(button => button.addEventListen
   document.querySelector('#dialog-title').textContent = draft.title;
   const content = document.querySelector('#dialog-content');
   content.replaceChildren(...draft.paragraphs.map(text => { const p = document.createElement('p'); p.textContent = text; return p; }));
+  if (draft.revision) { const p = document.createElement('p'); p.className = 'small-note'; p.textContent = draft.revision; content.append(p); }
   dialog.showModal();
 }));
 document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
