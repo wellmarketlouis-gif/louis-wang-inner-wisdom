@@ -1,5 +1,7 @@
 /* Preserve the headline's meaning and cadence on narrow screens. */
 h1 span { white-space: nowrap; }
+/* Keep the approved courtyard portrait's warm, natural color. */
+.about img { filter: none; object-position: 50% 30%; }
 @media (max-width: 700px) {
   .hero h1 { font-size: clamp(36px, 11.3vw, 44px); }
 }
