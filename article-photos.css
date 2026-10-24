@@ -6,5 +6,5 @@
 .article-photo figcaption{font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.7;margin-top:7px}
 
 /* owner-requested clean photo presentation */
-.note-photo,.article-photo,.about-section .about>figure{overflow:hidden}
-.note-photo img,.article-photo img,.about-section .about>figure>img{transform:scale(1.10);transform-origin:center;display:block}
+.note-photo,.article-photo{overflow:hidden}
+.note-photo img,.article-photo img{transform:scale(1.10);transform-origin:center;display:block}
