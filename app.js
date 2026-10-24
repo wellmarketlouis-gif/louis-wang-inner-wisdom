@@ -62,11 +62,24 @@ const drafts = {
   ]}
 };
 const dialog = document.querySelector('#article-dialog');
+const articlePhotos = {
+  'batch4-01': {src:'assets/note-tea-v001.png', alt:'王光耀在庭院放鬆品茶，呼應生活留白；AI情境示意'},
+  'batch18-01': {src:'assets/note-path-v001.png', alt:'王光耀在林徑散步觀察前方彎道，呼應面對變化；AI情境示意'},
+  'batch20-01': {src:'assets/note-window-v001.png', alt:'王光耀在雨後窗邊安靜休息，呼應讓心慢慢安定；AI情境示意'}
+};
 document.querySelectorAll('[data-note]').forEach(button => button.addEventListener('click', () => {
   const draft = drafts[button.dataset.note];
   document.querySelector('#dialog-title').textContent = draft.title;
   const content = document.querySelector('#dialog-content');
   content.replaceChildren(...draft.paragraphs.map(text => { const p = document.createElement('p'); p.textContent = text; return p; }));
+  const photo = articlePhotos[button.dataset.note];
+  if (photo) {
+    const figure = document.createElement('figure'), img = document.createElement('img'), caption = document.createElement('figcaption');
+    figure.className = 'article-photo'; img.src = photo.src; img.alt = photo.alt;
+    img.width = 1536; img.height = 1024;
+    caption.textContent = '王光耀本人參考形象・AI 情境示意，非實拍活動紀錄。';
+    figure.append(img, caption); content.prepend(figure);
+  }
   if (draft.tags) { const p = document.createElement('p'); p.className = 'small-note'; p.textContent = draft.tags; content.append(p); }
   if (draft.revision) { const p = document.createElement('p'); p.className = 'small-note'; p.textContent = draft.revision; content.append(p); }
   if (draft.sourceNote) { const p = document.createElement('p'); p.className = 'small-note'; p.textContent = draft.sourceNote; content.append(p); }

@@ -1,0 +1,6 @@
+.note-photo{margin:0;background:#e6e8dc}
+.note-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
+.note-photo figcaption{padding:6px 14px;font-size:10px;line-height:1.6;color:var(--muted);background:#f8f5ed}
+.article-photo{margin:0 0 24px}
+.article-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;border-radius:2px}
+.article-photo figcaption{font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.7;margin-top:7px}
