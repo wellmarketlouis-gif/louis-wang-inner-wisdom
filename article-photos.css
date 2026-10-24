@@ -8,3 +8,11 @@
 /* owner-requested clean photo presentation */
 .note-photo,.article-photo{overflow:hidden}
 .note-photo img,.article-photo img{transform:scale(1.10);transform-origin:center;display:block}
+
+/* Mobile: approved second-version photos and readable article summaries. */
+@media(max-width:700px){
+  :is(#note-external-1,#note-external-4,#note-external-5,#note-external-6,#note-external-7,#note-external-8) .note-photo img{
+    transform:none;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;
+  }
+  .note .note-body>p:not(.category){font-size:16px;line-height:1.9;color:#46584f;min-height:0;}
+}
