@@ -279,11 +279,10 @@ document.querySelectorAll('[data-note]').forEach(button => button.addEventListen
   content.replaceChildren(...draft.paragraphs.map(text => { const p = document.createElement('p'); p.textContent = text; return p; }));
   const photo = articlePhotos[button.dataset.note];
   if (photo) {
-    const figure = document.createElement('figure'), img = document.createElement('img'), caption = document.createElement('figcaption');
+    const figure = document.createElement('figure'), img = document.createElement('img');
     figure.className = 'article-photo'; img.src = photo.src; img.alt = photo.alt;
     img.width = 1536; img.height = 1024;
-    caption.textContent = '王光耀本人參考形象・AI 情境示意，非實拍活動紀錄。';
-    figure.append(img, caption); content.prepend(figure);
+    figure.append(img); content.prepend(figure);
   }
   if (draft.tags) { const p = document.createElement('p'); p.className = 'small-note'; p.textContent = draft.tags; content.append(p); }
   if (draft.revision) { const p = document.createElement('p'); p.className = 'small-note'; p.textContent = draft.revision; content.append(p); }
