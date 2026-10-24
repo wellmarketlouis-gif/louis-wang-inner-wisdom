@@ -4,3 +4,7 @@
 .article-photo{margin:0 0 24px}
 .article-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;border-radius:2px}
 .article-photo figcaption{font-family:var(--sans);font-size:11px;color:var(--muted);line-height:1.7;margin-top:7px}
+
+/* owner-requested clean photo presentation */
+.note-photo,.article-photo,.about-section .about>figure{overflow:hidden}
+.note-photo img,.article-photo img,.about-section .about>figure>img{transform:scale(1.10);transform-origin:center;display:block}
