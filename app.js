@@ -280,7 +280,12 @@ document.querySelectorAll('[data-note]').forEach(button => button.addEventListen
   const photo = articlePhotos[button.dataset.note];
   if (photo) {
     const figure = document.createElement('figure'), img = document.createElement('img');
-    figure.className = 'article-photo'; img.src = photo.src; img.alt = photo.alt;
+    figure.className = 'article-photo';
+    const photoBase = photo.src.replace(/\.png$/, '');
+    img.src = `${photoBase}-w1536.webp`;
+    img.srcset = [480, 800, 1536].map(width => `${photoBase}-w${width}.webp ${width}w`).join(', ');
+    img.sizes = '(max-width: 700px) calc(100vw - 88px), 720px';
+    img.decoding = 'async'; img.alt = photo.alt;
     img.width = 1536; img.height = 1024;
     figure.append(img); content.prepend(figure);
   }
