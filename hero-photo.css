@@ -1,3 +1,10 @@
+.hero-original {
+  margin: 0 0 18px;
+  color: #52625b;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.8;
+  letter-spacing: .06em;
+}
 .hero-photo img {
   display: block;
   width: 100%;
