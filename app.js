@@ -272,7 +272,9 @@ const articlePhotos = {
     "alt": "王光耀本人形象，呼應〈事情談妥了，心也需要慢慢跟上〉"
   }
 };
-document.querySelectorAll('[data-note]').forEach(button => button.addEventListener('click', () => {
+document.addEventListener('click', event => {
+  const button = event.target.closest('[data-note]');
+  if (!button || !drafts[button.dataset.note]) return;
   const draft = drafts[button.dataset.note];
   document.querySelector('#dialog-title').textContent = draft.title;
   const content = document.querySelector('#dialog-content');
@@ -299,7 +301,7 @@ document.querySelectorAll('[data-note]').forEach(button => button.addEventListen
     p.append(link); content.append(p);
   }
   dialog.showModal();
-}));
+});
 document.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => { if (event.target === dialog && (event.clientX < dialog.getBoundingClientRect().left || event.clientX > dialog.getBoundingClientRect().right || event.clientY < dialog.getBoundingClientRect().top || event.clientY > dialog.getBoundingClientRect().bottom)) dialog.close(); });
 let remaining = 60, ticker = null, targetTime = 0;
@@ -315,3 +317,8 @@ start.addEventListener('click', () => {
   targetTime = Date.now() + remaining * 1000; start.textContent = '暫停練習'; circle.classList.add('running'); message.textContent = '感受自然的呼吸，不需要刻意控制。'; ticker = setInterval(update, 200); update();
 });
 document.querySelector('#reset-timer').addEventListener('click', () => { stop(); remaining = 60; timer.textContent = '60'; start.textContent = '開始一分鐘'; message.textContent = '不必追趕，先回到當下。'; });
+
+// 每週內容獨立保存，避免改動既有58篇文章與首頁品牌導覽。
+const weeklyScript = document.createElement('script');
+weeklyScript.src = 'weekly-2026-W44.js';
+document.head.append(weeklyScript);
