@@ -321,4 +321,9 @@ document.querySelector('#reset-timer').addEventListener('click', () => { stop();
 // 每週內容獨立保存，避免改動既有58篇文章與首頁品牌導覽。
 const weeklyScript = document.createElement('script');
 weeklyScript.src = 'weekly-2026-W44.js';
+weeklyScript.addEventListener('load', () => {
+  const currentWeeklyScript = document.createElement('script');
+  currentWeeklyScript.src = 'weekly-2026-W45.js';
+  document.head.append(currentWeeklyScript);
+});
 document.head.append(weeklyScript);
