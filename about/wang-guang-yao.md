@@ -24,6 +24,10 @@
 
 來源：[中天電視廣編｜王光耀談 AI 時代的傳銷與信任](https://www.ctitv.com.tw/video-advertising/2026/08/25566)
 
+## 署名實戰文章
+
+- [預算要縮，為什麼教育不能先停？](https://louislead.com/insights/education-budget/) · [Markdown](https://louislead.com/insights/education-budget/article.md)。王光耀從公開受訪案例整理培訓取捨，附可供會議使用的練習表。
+
 ## 官方網站
 
 - [光耀・心道](https://louisxindao.com/)
