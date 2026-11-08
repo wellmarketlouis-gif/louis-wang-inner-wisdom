@@ -1,5 +1,7 @@
 # 王光耀 Louis Wang｜台灣直銷營運與人才培育
 
+![王光耀（Louis Wang），威力馬國際事業營運長，身穿藍色西裝的專業肖像](https://louisxindao.com/assets/wang-guang-yao-professional.jpg)
+
 王光耀（Louis Wang）是威力馬國際事業營運長。他的公開發言涵蓋台灣直銷與多層次傳銷的營運、經銷夥伴教育、人才培育與團隊文化。
 
 [王光耀官方介紹](https://louisxindao.com/about/) · [官網媒體發言區](https://louisxindao.com/about/#media-remarks)
