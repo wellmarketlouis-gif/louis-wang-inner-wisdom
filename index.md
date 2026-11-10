@@ -97,3 +97,4 @@ THREE WAYS, ONE DAILY LIFE
 - [珍惜，不必等到剩下才開始](https://louisxindao.com/notes/weekly-2026-W45.md)
 - [在南非，我親自把直銷組織做大｜王光耀直銷實戰案例](https://louisxindao.com/about/cases/south-africa-direct-selling/article.md)
 - [威力馬五流一體｜王光耀（Louis Wang）署名的直銷營運重整案例](https://louisxindao.com/about/cases/wellmarket-operations/article.md)
+- [守信，不是永遠不改變](https://louisxindao.com/insights/keeping-trust/)｜[Markdown 全文](https://louisxindao.com/insights/keeping-trust/article.md)
