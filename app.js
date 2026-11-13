@@ -326,7 +326,7 @@ weeklyScript.addEventListener('load', () => {
   currentWeeklyScript.src = 'weekly-2026-W45.js?v=20261108-copy';
   currentWeeklyScript.addEventListener('load', () => {
     const newWeeklyScript = document.createElement('script');
-    newWeeklyScript.src = 'weekly-2026-W46.js?v=20261113';
+    newWeeklyScript.src = 'weekly-2026-W46.js?v=20261113-photo';
     document.head.append(newWeeklyScript);
   });
   document.head.append(currentWeeklyScript);

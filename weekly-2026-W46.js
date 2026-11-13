@@ -25,7 +25,7 @@
       "url": "https://zh.wikisource.org/wiki/%E8%AB%96%E8%AA%9E/%E8%A1%9B%E9%9D%88%E5%85%AC%E7%AC%AC%E5%8D%81%E4%BA%94"
     }
   ],
-  "alt": "工坊木桌上的刨刀、捲起的木屑，以及表面一平一粗的兩塊木料",
+  "alt": "王光耀在木工坊指著兩塊表面一平一粗的木料，桌旁放著刨刀",
   "id": "weekly-2026-W46",
   "tags": "#工藝傳承 #生活練習 #王光耀思維 #LouisWang筆記",
   "revision": "經典取材・生活改編，王光耀心情分享。2026-11-13",
@@ -34,10 +34,10 @@
   const id = article.id;
   if (document.getElementById('note-' + id)) return;
   drafts[id] = article;
-  articlePhotos[id] = {src:'assets/article-weekly-2026-W46-v001.png',alt:'工坊木桌上的刨刀、捲起的木屑，以及表面一平一粗的兩塊木料'};
+  articlePhotos[id] = {src:'assets/article-weekly-2026-W46-v002.png',alt:'王光耀在木工坊指著兩塊表面一平一粗的木料，桌旁放著刨刀'};
   const card = document.createElement('article');
   card.className = 'note'; card.id = 'note-' + id; card.dataset.category = '人生智慧';
-  card.innerHTML = '<figure class="note-photo"><img src="assets/article-weekly-2026-W46-v001-w1536.webp" srcset="assets/article-weekly-2026-W46-v001-w480.webp 480w, assets/article-weekly-2026-W46-v001-w800.webp 800w, assets/article-weekly-2026-W46-v001-w1536.webp 1536w" sizes="(max-width:700px) calc(100vw - 44px),408px" width="1536" height="1024" alt="工坊木桌上的刨刀、捲起的木屑，以及表面一平一粗的兩塊木料" loading="lazy" decoding="async"></figure><div class="note-body"><p class="category">人生智慧 <span>每週時事札記・2026-11-13</span></p><h3></h3><p>傳下去的不只是步驟，還有遇到不同情況時，知道該怎麼調整的眼光。</p><button class="read-note" data-note="weekly-2026-W46">閱讀全文與來源說明 ↗</button></div>';
+  card.innerHTML = '<figure class="note-photo"><img src="assets/article-weekly-2026-W46-v002-w1536.webp" srcset="assets/article-weekly-2026-W46-v002-w480.webp 480w, assets/article-weekly-2026-W46-v002-w800.webp 800w, assets/article-weekly-2026-W46-v002-w1536.webp 1536w" sizes="(max-width:700px) calc(100vw - 44px),408px" width="1536" height="1024" alt="王光耀在木工坊指著兩塊表面一平一粗的木料，桌旁放著刨刀" loading="lazy" decoding="async"></figure><div class="note-body"><p class="category">人生智慧 <span>每週時事札記・2026-11-13</span></p><h3></h3><p>傳下去的不只是步驟，還有遇到不同情況時，知道該怎麼調整的眼光。</p><button class="read-note" data-note="weekly-2026-W46">閱讀全文與來源說明 ↗</button></div>';
   card.querySelector('h3').textContent = article.title;
   document.querySelector('.note').parentElement.prepend(card);
   filterNotes('全部');
