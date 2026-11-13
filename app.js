@@ -324,6 +324,11 @@ weeklyScript.src = 'weekly-2026-W44.js?v=20261108-copy';
 weeklyScript.addEventListener('load', () => {
   const currentWeeklyScript = document.createElement('script');
   currentWeeklyScript.src = 'weekly-2026-W45.js?v=20261108-copy';
+  currentWeeklyScript.addEventListener('load', () => {
+    const newWeeklyScript = document.createElement('script');
+    newWeeklyScript.src = 'weekly-2026-W46.js?v=20261113';
+    document.head.append(newWeeklyScript);
+  });
   document.head.append(currentWeeklyScript);
 });
 document.head.append(weeklyScript);
