@@ -11,7 +11,7 @@ canonical: https://louisxindao.com/insights/repair-paths/
 
 這週，不妨先挑一件還想繼續使用的物品。先不急著換，也不急著自己動手，試著找一個能評估、能說清楚修補條件的窗口。珍惜能不能走下去，有時就差這一步。
 
-歐盟一項產品可維修性公眾諮詢，從2026年11月3日進行到2027年2月9日；經濟部國際貿易署在11月19日報導此事。討論包括可拆修的設計、零件與維修資訊能否取得，目前仍是研議，不是已生效的新規定。
+歐盟一項產品可維修性公眾諮詢，從2026年11月3日進行到2027年2月28日；經濟部國際貿易署在11月19日報導此事。討論包括可拆修的設計、零件與維修資訊能否取得，目前仍是研議，不是已生效的新規定。
 
 這則消息讓我想到：想把東西用得久，不能只靠使用的人有耐心。找不到說明、不知道該問誰，好不容易問到了，卻沒有合適零件，再有心，也可能只剩買新的選擇。珍惜是一份心意，也需要一條走得通的路。
 
@@ -30,7 +30,7 @@ canonical: https://louisxindao.com/insights/repair-paths/
 時事來源：經濟部國際貿易署，2026-11-19〈歐盟執委會環境總署對「產品可維修性環保設計要求」啟動公眾諮詢〉
 https://www.trade.gov.tw/Pages/Detail.aspx?nodeid=45&pid=822355
 
-原始資料：歐盟執委會，Ecodesign requirements on product repairability（諮詢期2026-11-03至2027-02-09，布魯塞爾時間）
+原始資料：歐盟執委會，Ecodesign requirements on product repairability（諮詢期2026-11-03至2027-02-28，布魯塞爾時間）
 https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17873-Ecodesign-requirements-on-product-repairability_en
 
 經典原文：維基文庫《易傳／繫辭下》第二章
